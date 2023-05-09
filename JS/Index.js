@@ -201,7 +201,8 @@ const serverResponse = {
 
 const { data: { data: users } } = serverResponse;
 
-const [, user2, user3] = users;
+const [ , , user2, user3] = users;
+
 
 // За допомогою деструктурізації:
 // - створити змінну users на основании массива ,що містить масив користувачів з об'єкту serverResponse
