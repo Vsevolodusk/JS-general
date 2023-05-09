@@ -88,6 +88,8 @@ function randomArray(num) {
 }
 
 randomArray(20);
+
+
 function ArrayMethods(arr) {
 
   this.pairIndex = function () {
