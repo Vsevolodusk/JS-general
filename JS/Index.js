@@ -89,14 +89,17 @@ function randomArray(num) {
 
 randomArray(20);
 function ArrayMethods(arr) {
+
   this.pairIndex = function () {
     const filteredArray = arr.filter((elem, index) => index % 2 === 0);
     return filteredArray;
   };
+
   this.oddNumbers = function () {
     const oddNum = arr.filter((elem) => elem % 2 !== 0);
     return oddNum;
   };
+
   this.indexOfNegative = function () {
     const result = arr.map((elem, index) => {
       if (elem < 0) {
@@ -105,6 +108,7 @@ function ArrayMethods(arr) {
     });
     return result;
   };
+
   this.zeroCount = function () {
     let counter = 0;
     const result = arr.map((elem) => {
@@ -129,6 +133,7 @@ class Book {
     this.publisher = publisher;
   }
 }
+
 class Ebook extends Book {
   constructor(author, name, yop, publisher, format, enumber) {
     super(author, name, yop, publisher);
@@ -136,6 +141,7 @@ class Ebook extends Book {
     this.enumber = enumber;
   }
 }
+
 const someBook = new Book("asd", "asd", 2010, "asds");
 const someEBook = new Ebook("asdaa", "asdaa", 2019, "asds", "sd", 23215);
 // 5
